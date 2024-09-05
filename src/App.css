@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  margin: auto;
+}
+
+body::-webkit-scrollbar {
+  overflow: hidden;
+  width: 0px;
+}
+
+.box-shadow{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.4rem;
+}
+
+
+
+
+/* ..................1st Page=> Create FlashCard  ........................... */
+
+.error {
+  color: red;
+}
+
+input,
+textarea {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 3px;
+  padding-left: 10px;
+  background-color: white;
+}
+
+label {
+  color: rgb(129, 125, 125);
+  font-weight: bold;
+  text-align: left;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.dark label {
+  color: beige;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:active,
+.hvr-grow:focus,
+.hvr-grow:hover {
+  transform: scale(1.1);
+}
