@@ -14,6 +14,7 @@ import CreateModal from "../../components/createFlashcard/CreateModal";
 const CreateFlashCard = () => {
   // State to manage adding more term forms
   const [addMore, setAddMore] = useState([{ id: 1 }]);
+  const [leftVal, setLeftVal] = useState([0, 0]); // State to control the button's position
   // State to manage the modal animation
   const [showAnimation, setShowAnimation] = useState(false);
   const formData = useSelector((state) => state.flashcard.formData); // Accessing initial form data from Redux store
@@ -32,6 +33,7 @@ const CreateFlashCard = () => {
         pauseOnFocusLoss: false,
       });
       setAddMore([{ id: 1 }]); // Reset additional term forms
+      setLeftVal([0,0]);
       resetForm(); // Reset the form to initial values
     }
   });
@@ -49,7 +51,7 @@ const CreateFlashCard = () => {
       <form onSubmit={formik.handleSubmit}>
         <GroupForm formik={formik} />
         <TermForm formik={formik} addMore={addMore} setAddMore={setAddMore} />
-        <CreateButton setShowAnimation={setShowAnimation} formik={formik} />
+        <CreateButton setShowAnimation={setShowAnimation} formik={formik} setLeftVal={setLeftVal} leftVal={leftVal} />
       </form>
       <ToastContainer />
     </div>

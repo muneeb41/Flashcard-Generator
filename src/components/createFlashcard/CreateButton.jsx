@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const CreateButton = ({ setShowAnimation, formik }) => {
-  const [leftVal, setLeftVal] = useState([0, 0]); // State to control the button's position
+const CreateButton = ({ setShowAnimation, formik, leftVal,setLeftVal }) => {
+  
 
   // Function to handle button animation
   const handleAnimation = () => {
