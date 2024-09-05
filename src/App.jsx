@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Logo from "./components/common/logo";
+import Logo from "./components/common/Logo";
 import NavBar from "./components/common/NavBar";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRoutes from "./appRoutes/AppRoutes";
