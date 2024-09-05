@@ -115,7 +115,7 @@ const TermFormItem = ({ index, setAddMore, id, addMore, formik }) => {
         <div className="flex flex-row sm:justify-center">
           {/* Button to select image */}
           <label
-            className="groupImage order my-auto w-36 cursor-pointer sm:ml-5 p-4 border border-blue-700 flex items-center justify-center rounded text-sm py-5 sm:py-4"
+            className="groupImage order my-auto w-36 cursor-pointer h-10 sm:ml-5  border border-blue-700 flex items-center justify-center rounded text-sm py-1 sm:py-4"
             onClick={handleImageClick}
           >
             <span className="font-bold sm:text-lg text-blue-700 text-sm">
