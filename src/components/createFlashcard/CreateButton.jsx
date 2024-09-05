@@ -39,7 +39,7 @@ const CreateButton = ({ setShowAnimation, formik }) => {
         <div>
           {/* Message for missing required fields (visible on extra-large screens) */}
           <div className='hidden xl:block'>
-            <p className='text-center text-red-600'>You cannot submit until you fill all required fields!</p>
+            <p className='text-center text-red-600'>You cannot touch button until you fill all required fields!</p>
             <div className="relative pt-20 w-[100vw]">
               {/* Button with animation for incomplete form (visible on extra-large screens) */}
               <button
